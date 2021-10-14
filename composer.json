@@ -1,0 +1,32 @@
+{
+    "name": "thomasdeluck/amazon-sp",
+    "description": "Guzzle client for Amazon SP API",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "amazon"
+    ],
+    "authors": [
+        {
+            "name": "Pham Anh Duc",
+            "email": "vndhero@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "ThomasDeLuck\\AmazonSP\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ThomasDeLuck\\AmazonSP\\AmazonSPServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
