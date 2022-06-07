@@ -1,5 +1,5 @@
 {
-    "name": "thomasdeluck/amazon-sp",
+    "name": "averylongtips/amazon-sp",
     "description": "Guzzle client for Amazon SP API",
     "license": "MIT",
     "type": "library",
@@ -18,13 +18,13 @@
     },
     "autoload": {
         "psr-4": {
-            "ThomasDeLuck\\AmazonSP\\": "src/"
+            "AVeryLongTips\\AmazonSP\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ThomasDeLuck\\AmazonSP\\AmazonSPServiceProvider"
+                "AVeryLongTips\\AmazonSP\\AmazonSPServiceProvider"
             ]
         }
     },

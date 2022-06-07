@@ -1,6 +1,6 @@
 <?php
 
-namespace ThomasDeLuck\AmazonSP\Services;
+namespace AVeryLongTips\AmazonSP\Services;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;

@@ -1,20 +1,20 @@
-[![Latest Stable Version](http://poser.pugx.org/thomasdeluck/amazon-sp/v)](https://packagist.org/packages/thomasdeluck/amazon-sp)
-[![Total Downloads](http://poser.pugx.org/thomasdeluck/amazon-sp/downloads)](https://packagist.org/packages/thomasdeluck/amazon-sp)
-[![Latest Unstable Version](http://poser.pugx.org/thomasdeluck/amazon-sp/v/unstable)](https://packagist.org/packages/thomasdeluck/amazon-sp)
-[![License](http://poser.pugx.org/thomasdeluck/amazon-sp/license)](https://packagist.org/packages/thomasdeluck/amazon-sp)
-[![PHP Version Require](http://poser.pugx.org/thomasdeluck/amazon-sp/require/php)](https://packagist.org/packages/thomasdeluck/amazon-sp)
+[![Latest Stable Version](http://poser.pugx.org/averylongtips/amazon-sp/v)](https://packagist.org/packages/averylongtips/amazon-sp)
+[![Total Downloads](http://poser.pugx.org/averylongtips/amazon-sp/downloads)](https://packagist.org/packages/averylongtips/amazon-sp)
+[![Latest Unstable Version](http://poser.pugx.org/averylongtips/amazon-sp/v/unstable)](https://packagist.org/packages/averylongtips/amazon-sp)
+[![License](http://poser.pugx.org/averylongtips/amazon-sp/license)](https://packagist.org/packages/averylongtips/amazon-sp)
+[![PHP Version Require](http://poser.pugx.org/averylongtips/amazon-sp/require/php)](https://packagist.org/packages/averylongtips/amazon-sp)
 
 # Amazon SP Guzzle
 Guzzle client for Amazon SP API
 
 ## Installation
-```composer require thomasdeluck/amazon-sp```
+```composer require averylongtips/amazon-sp```
 
 ## Usage
 
 * Setup
 ```php
-use ThomasDeLuck\AmazonSP\Services\AmazonSPService;
+use AVeryLongTips\AmazonSP\Services\AmazonSPService;
 
 $service = new AmazonSPService();
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace ThomasDeLuck\AmazonSP;
+namespace AVeryLongTips\AmazonSP;
 
 use Illuminate\Support\ServiceProvider;
 
