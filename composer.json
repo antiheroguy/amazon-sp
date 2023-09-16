@@ -1,5 +1,5 @@
 {
-    "name": "averylongtips/amazon-sp",
+    "name": "antiheroguy/amazon-sp",
     "description": "Guzzle client for Amazon SP API",
     "license": "MIT",
     "type": "library",
@@ -18,13 +18,13 @@
     },
     "autoload": {
         "psr-4": {
-            "AVeryLongTips\\AmazonSP\\": "src/"
+            "AntiHeroGuy\\AmazonSP\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "AVeryLongTips\\AmazonSP\\AmazonSPServiceProvider"
+                "AntiHeroGuy\\AmazonSP\\AmazonSPServiceProvider"
             ]
         }
     },

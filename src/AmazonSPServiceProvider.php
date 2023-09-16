@@ -1,6 +1,6 @@
 <?php
 
-namespace AVeryLongTips\AmazonSP;
+namespace AntiHeroGuy\AmazonSP;
 
 use Illuminate\Support\ServiceProvider;
 
