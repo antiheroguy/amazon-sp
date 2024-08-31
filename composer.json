@@ -6,12 +6,6 @@
     "keywords": [
         "amazon"
     ],
-    "authors": [
-        {
-            "name": "Pham Anh Duc",
-            "email": "vndhero@gmail.com"
-        }
-    ],
     "require": {
         "php": "^7.2.5",
         "guzzlehttp/guzzle": "^6|^7"

@@ -67,7 +67,7 @@ class AmazonSPService extends HttpService
     public function sendRequest(string $method, string $path, array $config = [])
     {
         if (!$this->region || !array_key_exists($this->region, self::REGION)) {
-            throw new \Exception('Wrong or missing region');
+            throw new \Exception('Missing or wrong region');
         }
 
         $endpoint = self::REGION[$this->region];
@@ -127,7 +127,7 @@ class AmazonSPService extends HttpService
         // 1.8: Create a digest (hash) of the canonical request with the same algorithm that you used to hash the payload
         $canonicalRequest = strtolower(bin2hex(hash('sha256', $canonicalRequest, true)));
 
-        // 2: Create a string to sign
+        /** 2: Create a string to sign */
 
         // 2.1: Start with the algorithm designation, followed by a newline character
         $stringToSign = 'AWS4-HMAC-SHA256' . "\n";
@@ -151,7 +151,7 @@ class AmazonSPService extends HttpService
         $kSigning = hash_hmac('sha256', 'aws4_request', $kService, true);
         $signature = strtolower(bin2hex(hash_hmac('sha256', $stringToSign, $kSigning, true)));
 
-        // 4: Add the signature to the HTTP request
+        /** 4: Add the signature to the HTTP request */
         $headers['Authorization'] = 'AWS4-HMAC-SHA256' . ' ' . 'Credential=' . $this->config['access_key_id'] . '/' . $credentialScope . ', ' . 'SignedHeaders=' . $signedHeaders . ', ' . 'Signature=' . $signature;
 
         return parent::sendRequest($method, $path, array_merge(

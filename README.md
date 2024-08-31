@@ -1,14 +1,12 @@
-[![Latest Stable Version](http://poser.pugx.org/antiheroguy/amazon-sp/v)](https://packagist.org/packages/antiheroguy/amazon-sp)
-[![Total Downloads](http://poser.pugx.org/antiheroguy/amazon-sp/downloads)](https://packagist.org/packages/antiheroguy/amazon-sp)
-[![Latest Unstable Version](http://poser.pugx.org/antiheroguy/amazon-sp/v/unstable)](https://packagist.org/packages/antiheroguy/amazon-sp)
-[![License](http://poser.pugx.org/antiheroguy/amazon-sp/license)](https://packagist.org/packages/antiheroguy/amazon-sp)
-[![PHP Version Require](http://poser.pugx.org/antiheroguy/amazon-sp/require/php)](https://packagist.org/packages/antiheroguy/amazon-sp)
+![Packagist Version](https://img.shields.io/packagist/v/antiheroguy/amazon-sp)
 
 # Amazon SP Guzzle
 Guzzle client for Amazon SP API
 
 ## Installation
-```composer require antiheroguy/amazon-sp```
+```shell
+composer require antiheroguy/amazon-sp
+```
 
 ## Usage
 
@@ -109,4 +107,7 @@ $content = iconv('SJIS', 'utf-8', $content);
 return $service->readCSVContent(str_replace("\t", ',', $content));
 ```
 
-* You can publish config by running `php artisan vendor:publish --tag=amazon-sp`
+* You can publish config by running 
+```shell
+php artisan vendor:publish --tag=amazon-sp
+```
